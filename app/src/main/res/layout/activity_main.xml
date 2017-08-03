@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dumisile.reportcartd.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/Stamp_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/logo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/Stamp_image"
+        android:layout_marginTop="12dp">
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="   STUDENT NUMBER   :"
+            android:textStyle="bold"
+            android:textColor="#4682B4"/>
+
+        <EditText
+            android:id="@+id/edtNumber"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/Number">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="   STUDENT NAME        :"
+            android:textStyle="bold"
+            android:textColor="#4682B4"/>
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Student_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/Name">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="   STUDENT CLASS       :"
+            android:textStyle="bold"
+            android:textColor="#4682B4" />
+
+        <EditText
+            android:id="@+id/edtClass"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/faculty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/Student_class">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="   STUDENT FACULTY  :"
+            android:textStyle="bold"
+            android:textColor="#4682B4"/>
+
+        <EditText
+            android:id="@+id/edtFaculty"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/markOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/faculty"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.00"
+            android:text="  MARK 1:"
+            android:textStyle="bold"
+            android:textColor="#2E8B57"/>
+
+        <EditText
+            android:id="@+id/edtMarkOne"
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.00"
+            android:text="  MARK 2:"
+            android:textStyle="bold"
+            android:textColor="#2E8B57"/>
+
+        <EditText
+            android:id="@+id/edtMarkTwo"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.00"
+            android:text="  MARK 3:"
+            android:textStyle="bold"
+            android:textColor="#2E8B57"/>
+
+        <EditText
+            android:id="@+id/edtMarkThree"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/average"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/markOne">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  AVERAGE MARK:"
+            android:textStyle="bold"
+            android:textColor="#2E8B57"/>
+
+        <TextView
+            android:id="@+id/txtAvg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="cursive"
+            android:text=""
+            android:textSize="18dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/remarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/average">
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  REMARKS           :"
+            android:textStyle="bold"
+            android:textColor="#2E8B57" />
+
+        <EditText
+            android:id="@+id/edtRemarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/buttonOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/remarks">
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.80"
+            android:background="#F0F8FF"
+            android:text="ADD"
+            android:onClick="add"
+            android:textColor="#DEB887" />
+
+        <Button
+            android:id="@+id/btnRetrieve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.67"
+            android:background="#F0F8FF"
+            android:text="RETRIEVE "
+            android:onClick="retrieve"
+            android:textColor="#DEB887" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/buttonTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/buttonOne">
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.15"
+            android:background="#F0F8FF"
+            android:text="DELETE"
+            android:onClick="delete"
+            android:textColor="#DEB887" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="UPDATE"
+            android:onClick="update"
+            android:textColor="#DEB887"
+            android:background="#F0F8FF"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/stdId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Stamp_image">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.51"
+            android:text="   STUDENT ID                :"
+            android:textColor="#4682B4"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.70"
+            android:fontFamily="cursive"
+            android:text=""
+            android:textSize="18dp" />
+    </LinearLayout>
+</RelativeLayout>
+
